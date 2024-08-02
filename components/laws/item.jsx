@@ -5,7 +5,7 @@ const Item = () => {
     return (
         <div className={styles.item}>
             <div className={styles.itemAvatar}>
-                <img src="./banner.jpg" alt=""/>
+                <img src="./banner2.jpg" alt=""/>
             </div>
             <div className={styles.info}>
                 <h3>Օրնեք ֆլանի մասին</h3>

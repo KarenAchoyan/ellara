@@ -8,7 +8,6 @@ const Index = () => {
         <>
             <App>
                 <PagesLine text={'Մեր մասին'}/>
-                <h1 className={styles.title}>Մեր մասին</h1>
                 <About/>
             </App>
         </>

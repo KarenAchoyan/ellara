@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from "../../styles/service.module.css"
+import Link from "next/link";
+
 const Service = () => {
     return (
         <div className={styles.service}>
@@ -7,15 +9,19 @@ const Service = () => {
             <div className={styles.container}>
                 <div className={styles.section}>
                     <img src="./banner.jpg" alt=""/>
-                    <div className={styles.text}>
-                        <h3>Հաշվապահական ծառայություններ</h3>
-                    </div>
+                    <Link href='/services'>
+                        <div className={styles.text}>
+                            <h3>Հաշվապահական ծառայություններ</h3>
+                        </div>
+                    </Link>
                 </div>
                 <div className={styles.section}>
                     <img src="./banner.jpg" alt=""/>
-                    <div className={styles.text}>
-                        <h3>Հաշվապահական դասընթացներ</h3>
-                    </div>
+                    <Link href='/lessons'>
+                        <div className={styles.text}>
+                            <h3>Հաշվապահական դասընթացներ</h3>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -28,7 +28,7 @@ const Header = () => {
                 <div className={styles.menu}>
                     <div className={styles.logo}>
                         <Link href='/'>
-                            <img src="./logo.png" alt="logo"/>
+                            <img src="/logo.png" alt="logo"/>
                         </Link>
                     </div>
                     <div className={styles.menu}>
