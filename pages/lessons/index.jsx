@@ -2,12 +2,20 @@ import React from 'react';
 import styles from "../../styles/service.module.css";
 import Item from "../../components/service/item";
 import App from "../../components/layouts/app";
+import PagesLine from "@/components/pagesLine/pagesLine";
 
 const Index = () => {
     return (
+
         <App>
+
+         <>
+         <PagesLine text={ <p>Դասընթացներ</p>}/>
+         </>
+
+
             <div className={styles.serviceContainer}>
-                <h1>Դասընթացներ</h1>
+
                 <div className={styles.container}>
                     <div className={styles.row}>
                         <Item/>
@@ -21,6 +29,7 @@ const Index = () => {
                     </div>
                 </div>
             </div>
+
         </App>
     );
 };

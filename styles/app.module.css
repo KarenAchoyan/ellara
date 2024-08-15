@@ -1,6 +1,42 @@
 .header {
     width: 100%;
     background: #002147;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px 0;
+    z-index: 4;
+    transition: background-color 0.3s, padding 0.3s, transform 0.3s;
+}
+
+.isSticky {
+    position: fixed;
+    transform: translateY(0);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    backdrop-filter: blur(10px);
+    animation: slideDown 0.35s ease-out;
+    background: #002147;
+}
+
+.isSticky img {
+    max-width: 80%;
+}
+
+.isSticky .menu a {
+    font-size: 14px;
+    padding: 7px 10px;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .container {
@@ -14,6 +50,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 
 .contact ul {
     display: flex;
@@ -42,7 +79,7 @@
     display: flex;
 }
 
-.social ul li:hover{
+.social ul li:hover {
     opacity: 0.7;
     cursor: pointer;
 }
@@ -54,73 +91,196 @@
     font-size: 22px;
 }
 
-.menu ul {
-    display: flex;
-}
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     height: 90px;
     align-items: center;
 }
-.menu a{
+
+.menu ul {
+    display: flex;
+}
+
+.menu a {
     color: white;
     text-decoration: none;
 }
-.logo img{
+
+.logo img {
     height: 80px;
 }
-.menu ul li{
+
+.menu ul li {
     color: white;
     list-style: none;
     margin-left: 20px;
 }
-.menu ul li:hover{
+
+.menu ul li:hover {
     opacity: 0.7;
     cursor: pointer;
 }
-.footer{
+
+.footer {
     padding-top: 20px;
+    width: 100%;
+    background-color: #002147;
 }
+
 .footer .container {
     display: flex;
+    margin-top: 70px;
 }
-.footer .container ul li:first-child{
+
+.footer .container ul li:first-child {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 20px;
 }
-.footer .container ul li{
+
+.footer .container ul li {
     color: white;
     list-style: none;
     margin: 5px 0;
 }
-.footer .container ul li a{
+
+.footer .container ul li a {
     color: white;
-
     text-decoration: none;
-
 }
-.footer .container ul{
+
+.footer .container ul {
     margin-right: 100px;
 }
-.footer .container ul li span{
+
+.footer .container ul li span {
     opacity: 0.8;
     margin-right: 5px;
+}
 
-}
-.footer{
-    width: 100%;
-    background-color: #002147;
-}
-.bottom{
+.bottom {
     width: 100%;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.23);
     margin-top: 20px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+}
+.drawh1{
+
+    font-size: 19px;
+    font-weight: bolder;
+
+}
+.drawer{
+    display: none;
+}
+.contact1 ul {
+
+    align-items: center;
+    height: 100%;
+}
+.top1{
+    width: 100%;
+
+    display: flex;
+
+}
+.social1 ul{
+    display: flex;
+}
+
+
+.contact1 li {
+    color: black;
+    list-style: none;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/*.contact1 {*/
+/*  */
+/*}*/
+
+.social1 {
+
+    display: flex;
+    align-items: center;
+}
+
+.social1 ul li:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.social1 li {
+    margin-left: 20px;
+    list-style: none;
+    color: black;
+    font-size: 22px;
+}
+.menuItems1{
+    color:black ;
+}
+.menuItems1 ul li{
+    list-style: none;
+    margin: 10px;
+    color: black;
+    font-size: 16px;
+
+    font-family: Tahoma;
+}
+
+
+@media only screen and (max-width: 900px){
+    .menuItems{
+        display: none;
+
+    }
+    .contact1{
+        display: block;
+    }
+    .social1{
+        display: block;
+        margin-left: 30px;
+    }
+    .drawer{
+        display: block;
+    }
+    .top{
+        display: none;
+    }
+    .top1{
+
+        display: flex;
+    }
+    .ull{
+        display: none;
+    }
+    .bottom{
+        font-size: 11px;
+        margin: 10px;
+
+    }
+
+
+}
+@media only screen and (max-width: 1200px){
+
+    .footer .container {
+        display: flex;
+        margin-top: 150px;
+    }
+
+}
+@media only screen and (max-width: 1000px){
+
+    .footer .container {
+        display: flex;
+        margin-top: 250px;
+    }
+
 }
