@@ -18,7 +18,7 @@ const Service = () => {
 
 
                         <div className={styles.service1}>
-                             {/*<img src="./banner2.jpg" alt=""/>*/}
+                             <img src="./banner2.jpg" alt=""/>
                         </div>
                         <div className={styles.text}>
                             <h3>Հաշվապահական ծառայություններ</h3>
@@ -28,7 +28,7 @@ const Service = () => {
                 <div className={styles.section}>
 
                     <Link href='/lessons'>
-
+                        <img src="./banner2.jpg" alt=""/>
 
                         <div className={styles.text}>
                             <h3>Հաշվապահական դասընթացներ</h3>
